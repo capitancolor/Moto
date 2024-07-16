@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPS Tracker</title>
+  <title>MOTO RUSH</title>
   <style>
     #map { height: 80vh; width: 50%; }
   </style>
@@ -26,7 +26,7 @@
     async function trackGPS() {
       const code = document.getElementById('code').value;
       if (!code) {
-        alert('Please enter a code');
+        alert('Ingrese su código de envío');
         return;
       }
       const response = await fetch(`/location?code=${code}`);
@@ -40,7 +40,7 @@
         map.setView([lat, lon], 13);
         setTimeout(trackGPS, 5000); // Update every 5 seconds
       } else {
-        alert('Invalid code');
+        alert('Código inválido');
       }
     }
   </script>
