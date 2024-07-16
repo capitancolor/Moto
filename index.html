@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOTO RUSH</title>
+  <title>GPS Tracker</title>
   <style>
-    #map { height: 80vh; width: 50%; }
+    #map { height: 80vh; width: 100%; }
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
@@ -29,7 +29,7 @@
         alert('Ingrese su código de envío');
         return;
       }
-      const response = await fetch(`/location?code=${code}`);
+      const response = await fetch(`https://motor.pmsalgado24.workers.dev/location?code=${code}`);
       if (response.status === 200) {
         const { lat, lon } = await response.json();
         if (marker) {
