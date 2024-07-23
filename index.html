@@ -6,7 +6,7 @@
   <title>MOTO RUSH</title>
   <style>
     body {
-      background-color: rgb(29, 28, 28);
+      background-color: rgb(37, 37, 39);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -68,7 +68,84 @@
       background-color: #45a049;
     }
 
- 
+    .footer {
+            width: 100%;
+            margin-top: 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: rgb(37, 37, 39);
+            margin: 16px;
+        }
+
+        .footer-container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 16px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .footer-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .footer-logo img {
+            height: 32px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #a0aec0; /* text-gray-500 dark:text-gray-400 */
+        }
+
+        .footer-links a {
+            margin-right: 16px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-hr {
+            border: none;
+            border-top: 1px solid #e2e8f0; /* border-gray-200 dark:border-gray-700 */
+            margin: 24px auto;
+        }
+
+        .footer-text {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: #a0aec0; /* text-gray-500 dark:text-gray-400 */
+        }
+
+        .footer-text a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
+
+
     @media (max-width: 600px) {
       .input-container {
         flex-direction: column;
@@ -113,6 +190,30 @@
   </div>
 
   <div id="map"></div>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-flex">
+            <div class="footer-logo">
+                <a href="#">
+                    <img src="MotoRush ESCUDO PNG.png" alt="MotoRush Logo">
+                </a>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Licencia</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <hr class="footer-hr">
+        <span class="footer-text">© 2024 <a href="#">MotoRush</a>. Todos los derechos reservados.</span>
+    </div>
+</footer>
+
+
 
   <script>
     const map = L.map('map').setView([0, 0], 2);
