@@ -58,7 +58,7 @@
 
 
   <script>
-    const map = L.map('map').setView([0, 0], 2);
+    const map = L.map('map').setView([-34.61315, -58.37723], 10);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '© OpenStreetMap contributors'
     }).addTo(map);
@@ -79,7 +79,7 @@
         } else {
           marker = L.marker([lat, lon]).addTo(map);
         }
-        map.setView([lat, lon], 13);
+        map.setView([lat, lon], 20);
         setTimeout(trackGPS, 5000); // Actualizar cada 5 segundos
       } else {
         alert('Código inválido');
@@ -103,6 +103,7 @@
       width: 90%;
       max-width: 800px;
       margin: 20px 0;
+      
     }
     
     .float-wa {
