@@ -173,7 +173,7 @@ body {
       }
 
   @media (max-width: 600px) {
-    .input-container {
+    .input-container, .input-container button  {
       flex-direction: column;
     }
 
