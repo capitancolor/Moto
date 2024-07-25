@@ -176,13 +176,7 @@ body {
     .input-container {
       flex-direction: column;
     }
-    .input-container input{
-      width: 90%;
-      margin-bottom: 10px;
-    }
-    .input-container button {
-        width: 98%;
-}
+
     .float-wa {
     position: fixed;
     width: 2px;
